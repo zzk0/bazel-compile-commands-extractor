@@ -820,7 +820,7 @@ def _get_commands(target: str, flags: str):
         # We'll disable artifact output for efficiency, since it's large and we don't use them. Small win timewise, but dramatically less json output from aquery.
         '--include_artifacts=false',
         # Shush logging. Just for readability.
-        '--ui_event_filters=-info',
+        # '--ui_event_filters=-info',
         '--noshow_progress',
         # Disable param files, which would obscure compile actions
         # Mostly, people enable param files on Windows to avoid the relatively short command length limit.
